@@ -268,12 +268,11 @@ contract PaymentEscrow is Ownable, ReentrancyGuard, IPaymentEscrow {
      * @notice Complete milestone and release milestone payment (mock - not fully implemented)
      * @param escrowId Unique escrow identifier
      * @param milestoneId Milestone identifier
-     * @param proof IPFS hash for milestone proof
      */
     function completeMilestone(
         uint256 escrowId,
         uint256 milestoneId,
-        string memory proof
+        string memory /* proof */
     ) external override escrowExists(escrowId) {
         // Mock implementation - in production, this would verify milestone conditions
         EscrowPayment storage escrow = _escrows[escrowId];

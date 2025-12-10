@@ -39,9 +39,10 @@ async function main() {
   console.log("\nDeployment completed successfully!");
 
   // Save deployment addresses (optional - for frontend/backend)
+  const network = await hre.ethers.provider.getNetwork();
   const deploymentInfo = {
     network: hre.network.name,
-    chainId: (await hre.ethers.provider.getNetwork()).chainId,
+    chainId: Number(network.chainId),
     deployer: deployer.address,
     contracts: {
       TripRegistry: tripRegistryAddress,

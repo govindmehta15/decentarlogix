@@ -281,7 +281,7 @@ contract TripRegistry is ERC721, ERC721URIStorage, Ownable, ReentrancyGuard, ITr
         override 
         returns (uint256 tripId)
     {
-        require(_exists(tokenId), "TripRegistry: Token does not exist");
+        require(_ownerOf(tokenId) != address(0), "TripRegistry: Token does not exist");
         return _tokenToTrip[tokenId];
     }
     
