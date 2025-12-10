@@ -1,0 +1,48 @@
+{
+  "name": "decentralogix-frontend",
+  "version": "1.0.0",
+  "description": "React frontend for DecentraLogix logistics platform",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/",
+    "format": "prettier --write 'src/**/*.{js,jsx,css,json}'"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "ethers": "^6.9.0",
+    "axios": "^1.6.2",
+    "@web3modal/ethers": "^2.7.0",
+    "@web3modal/react": "^2.7.0",
+    "wagmi": "^2.5.0",
+    "viem": "^2.0.0",
+    "recharts": "^2.10.3",
+    "react-hot-toast": "^2.4.1",
+    "date-fns": "^3.0.0"
+  },
+  "devDependencies": {
+    "react-scripts": "5.0.1",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.0",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
+
