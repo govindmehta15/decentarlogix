@@ -6,6 +6,7 @@ import { TripForm } from './components/shipment/TripForm';
 import { TripDetails } from './components/shipment/TripDetails';
 import { PaymentButton } from './components/common/PaymentButton';
 import { CarbonDashboard } from './components/common/CarbonDashboard';
+import { TestPanel } from './components/testing/TestPanel';
 import './App.css';
 
 function App() {
@@ -54,6 +55,12 @@ function App() {
           >
             Carbon Credits
           </button>
+          <button
+            className={activeTab === 'testing' ? 'nav-btn active' : 'nav-btn'}
+            onClick={() => setActiveTab('testing')}
+          >
+            Testing
+          </button>
         </nav>
 
         <main className="app-main">
@@ -92,6 +99,10 @@ function App() {
 
           {activeTab === 'carbon' && (
             <CarbonDashboard />
+          )}
+
+          {activeTab === 'testing' && (
+            <TestPanel />
           )}
         </main>
 

@@ -1,0 +1,143 @@
+.test-panel {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.test-panel h2 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.test-description {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.test-warning {
+  padding: 1rem;
+  background: #fef3c7;
+  border-left: 4px solid #f59e0b;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  color: #92400e;
+}
+
+.test-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-test,
+.btn-clear {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-test {
+  background: #4f46e5;
+  color: white;
+}
+
+.btn-test:hover:not(:disabled) {
+  background: #4338ca;
+}
+
+.btn-test:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-clear {
+  background: #e5e7eb;
+  color: #333;
+}
+
+.btn-clear:hover {
+  background: #d1d5db;
+}
+
+.test-trip-id {
+  padding: 1rem;
+  background: #f0f9ff;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  font-family: monospace;
+}
+
+.test-results {
+  margin-top: 2rem;
+}
+
+.test-results h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.test-result {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border-left: 4px solid #e5e7eb;
+}
+
+.test-result.test-success {
+  background: #f0fdf4;
+  border-left-color: #10b981;
+}
+
+.test-result.test-error {
+  background: #fef2f2;
+  border-left-color: #ef4444;
+}
+
+.test-result.test-running {
+  background: #fffbeb;
+  border-left-color: #f59e0b;
+}
+
+.test-result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.test-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.test-status {
+  font-size: 0.9rem;
+}
+
+.test-data {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.test-data-item {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.test-error {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e5e7eb;
+  color: #dc2626;
+  font-size: 0.9rem;
+}
+

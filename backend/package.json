@@ -8,6 +8,7 @@
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
     "test": "jest",
+    "simulate": "node scripts/simulateSimple.js",
     "lint": "eslint src/",
     "format": "prettier --write 'src/**/*.js'"
   },
@@ -44,4 +45,3 @@
     "firebase-admin": "^12.0.0"
   }
 }
-
