@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: decentralogix-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      - key: RPC_URL
+        sync: false
+      - key: PRIVATE_KEY
+        sync: false
+      - key: CHAIN_ID
+        value: 80001
+      - key: TRIP_REGISTRY_ADDRESS
+        sync: false
+      - key: PAYMENT_ESCROW_ADDRESS
+        sync: false
+      - key: CARBON_CREDITS_ADDRESS
+        sync: false
+      - key: LOG_LEVEL
+        value: info
+

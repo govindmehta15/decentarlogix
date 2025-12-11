@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "REACT_APP_API_URL": "@api_url",
+    "REACT_APP_TRIP_REGISTRY_ADDRESS": "@trip_registry_address",
+    "REACT_APP_PAYMENT_ESCROW_ADDRESS": "@payment_escrow_address",
+    "REACT_APP_CARBON_CREDITS_ADDRESS": "@carbon_credits_address",
+    "REACT_APP_CHAIN_ID": "@chain_id"
+  }
+}
+
