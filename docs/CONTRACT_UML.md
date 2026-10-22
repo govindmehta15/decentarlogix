@@ -262,7 +262,7 @@ Shipper          Carrier          TripRegistry    PaymentEscrow    CarbonCredits
                         │ (if dispute)
                         ▼
                  ┌──────────────┐
-                 │   Disputed    │
+                 │   Disputed   │
                  └──────────────┘
 ```
 

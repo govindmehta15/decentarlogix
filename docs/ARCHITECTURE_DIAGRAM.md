@@ -97,19 +97,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    GitHub Repository                         │
+│                    GitHub Repository                        │
 │                                                             │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │
-│  │  Frontend    │  │   Backend    │  │  Contracts   │     │
-│  │  (React)     │  │  (Node.js)   │  │  (Solidity)  │     │
-│  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘     │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
+│  │  Frontend    │  │   Backend    │  │  Contracts   │       │
+│  │  (React)     │  │  (Node.js)   │  │  (Solidity)  │       │
+│  └──────┬───────┘  └──────┬───────┘  └─────--─┬─────┘       │
 └─────────┼──────────────────┼──────────────────┼─────────────┘
           │                  │                  │
           │ Auto-deploy      │ Auto-deploy      │ Manual
           │                  │                  │
     ┌─────▼─────┐      ┌─────▼─────┐      ┌─────▼─────┐
     │  Vercel   │      │  Render/  │      │  Polygon  │
-    │           │      │  Railway   │      │  Mumbai   │
+    │           │      │  Railway  │      │  Mumbai   │
     │  - CDN    │      │           │      │           │
     │  - HTTPS  │      │  - HTTPS  │      │  - RPC    │
     │  - Auto   │      │  - Logs   │      │  - Blocks │
